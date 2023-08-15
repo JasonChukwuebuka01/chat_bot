@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button class="chatbot-toggler">
+      <i class="fa-regular fa-comment"></i>
+      <i class="fa-solid fa-times"></i>
+    </button>
+
+    <!-- chat-bot start-->
+
+    <section class="chat-bot">
+      <header>
+        <h4>MayIcodes Chat GPT-3</h4>
+        <i class="fa-solid fa-times closeButton"></i>
+      </header>
+
+      <ul class="chat-box">
+        <li class="chat incoming">
+          <i class="fa-solid fa-robot fa-bounce"></i>
+          <p>
+            Hi there 👋,<br />
+            How can i help you today?
+          </p>
+        </li>
+      </ul>
+
+      <article class="chat-input">
+        <textarea
+          id="user-input"
+          placeholder="Enter Text..."
+          required></textarea>
+        <i id="send-button" class="fa-sharp fa-solid fa-paper-plane"></i>
+      </article>
+    </section>
+
+    <!-- chat-bot End-->
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=hVhrg0gf"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
